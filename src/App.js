@@ -47,7 +47,7 @@ function App() {
               {data.main ? (
                 <p className="bold">{data.main.feels_like.toFixed()}°F</p>
               ) : null}
-              <p>Feels Liike</p>
+              <p>Feels Liiike</p>
             </div>
             <div className="humidity">
               {data.main ? <p className="bold">{data.main.humidity}%</p> : null}
