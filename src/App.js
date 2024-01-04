@@ -1,10 +1,15 @@
+<<<<<<< HEAD
 
 import React, { useState, useEffect } from 'react';
+=======
+import React, { useState } from "react";
+>>>>>>> 330c940b4c818b3e835d954487c4caef9b6b9d74
 import axios from "axios";
 
 function App() {
   const [data, setData] = useState({});
   const [location, setLocation] = useState("");
+<<<<<<< HEAD
   const url = `https://marine-api.open-meteo.com/v1/marine?latitude=54.544587&longitude=10.227487&hourly=wave_height`;
 
   useEffect(() => {
@@ -34,6 +39,10 @@ function App() {
     fetchData();
   }, []); // Run the effect only once when the component mounts
 
+=======
+
+  const url = `https://api.openweathermap.org/data/2.5/weather?q=${location}&units=imperial&appid=895284fb2d2c50a520ea537456963d9c`;
+>>>>>>> 330c940b4c818b3e835d954487c4caef9b6b9d74
 
   const searchLocation = (event) => {
     if (event.key === "Enter") {
@@ -56,9 +65,13 @@ function App() {
           placeholder="Enter Location"
           type="text"
         />
+<<<<<<< HEAD
         </div>
     
 
+=======
+      </div>
+>>>>>>> 330c940b4c818b3e835d954487c4caef9b6b9d74
       <div className="container">
         <div className="top">
           <div className="location">
